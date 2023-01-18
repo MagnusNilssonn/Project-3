@@ -31,11 +31,17 @@ def get_ship_location():
     while column not in 'ABCDEFG':
         print("Please enter a valid column ")
         column = input('Please enter a valid column A-G ')
-    return int(row) - 1, let_to_num[column]        
+    return int(row) - 1, let_to_num[column]
 
+
+#Function that creates the Battleship randomly
 
 def create_ships(board):
-    pass
+    for ship in range(2):
+        ship_r, ship_cl = randint(0, 6), randint(0, 6)
+        while board[ship_r][ship_cl] == 'X':
+            ship_r, ship_cl = randint(0, 6), randint(0, 6)
+        board[ship_r][ship_cl] = 'X'
 
 
 def count_hit_ships(board):
