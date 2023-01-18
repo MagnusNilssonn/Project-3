@@ -6,7 +6,7 @@ from random import randint
 Hidden_Playfield = [[' '] * 7 for x in range(7)]
 Guess_Playfield = [[' '] * 7 for x in range(7)]
 
-let_to_num = {'A': 0, 'B': 1, 'C': 2, 'D': 3, 'E': 4, 'F': 5, 'G': 6 }
+let_to_num = {'A': 0, 'B': 1, 'C': 2, 'D': 3, 'E': 4, 'F': 5, 'G': 6, }
 
 
 def print_board(board):
@@ -45,7 +45,12 @@ def create_ships(board):
 
 
 def count_hit_ships(board):
-    pass
+    count = 0
+    for row in board:
+        for column in row:
+          if column == 'X':
+            count += 1
+    return count
 
 
 
