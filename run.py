@@ -17,7 +17,8 @@ def print_board(board):
         print("%d|%s|" % (row_num, "|".join(row)))
         row_num += 1
 
-#Enter the row number between 1 to 7
+# Enter the row number between 1 to 7
+
 
 def get_ship_location():
     row = input('Please enter a valid row 1-7 ').upper()
@@ -25,7 +26,7 @@ def get_ship_location():
         print("Please enter a valid row ")
         row = input('Please enter a valid row 1-7 ')
 
-#Enter the column from A TO G
+# Enter the column from A TO G
 
     column = input('Please enter a valid column A-G ').upper()
     while column not in 'ABCDEFG':
@@ -34,7 +35,7 @@ def get_ship_location():
     return int(row) - 1, let_to_num[column]
 
 
-#Function that creates the Battleship randomly
+# Function that creates the Battleship randomly
 
 def create_ships(board):
     for ship in range(2):
@@ -48,16 +49,17 @@ def count_hit_ships(board):
     count = 0
     for row in board:
         for column in row:
-          if column == 'X':
-            count += 1
+            if column == 'X':
+                count += 1
     return count
 
-#Print_board(Hidden_Playfield)
+# Print_board(Hidden_Playfield)
+
 
 create_ships(Hidden_Playfield)
 turns = 15
 while turns > 0:
-    print(' Welcome to Battleship!, Commander you have 15 tries to find the two Battleships')
+    print('Welcome to Battleship! You have 15 tries to find the two ships')
     print_board(Guess_Playfield)
     row, column = get_ship_location()
     if Guess_Playfield[row][column] == 'O':
