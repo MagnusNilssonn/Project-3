@@ -78,5 +78,3 @@ while turns > 0:
     print(' You have ' + str(turns) + ' turns remaining ')
     if turns == 0:
         print(' Game Over, See you next time ')
-
-
