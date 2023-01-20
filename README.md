@@ -80,7 +80,7 @@ You start by choosing row 1-7.
 
 
 
-The live link can be found here - 
+The live link can be found here - https://battleship--pp3.herokuapp.com/
 
 
 # Credits 
