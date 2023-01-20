@@ -1,3 +1,4 @@
+
 # 'O' indicates a miss
 # 'X' indicates a hit
 
@@ -35,6 +36,7 @@ def get_ship_location():
     return int(row) - 1, let_to_num[column]
 
 # Function that creates the Battleship randomly
+
 
 def create_ships(board):
     for ship in range(2):
