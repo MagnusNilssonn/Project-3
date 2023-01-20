@@ -31,9 +31,8 @@ def get_ship_location():
     column = input('Please enter a valid column A-G ').upper()
     while column not in 'ABCDEFG':
         print("Please enter a valid column ")
-        column = input('Please enter a valid column A-G ')
+        column = input('Please enter a valid column A-G ').upper()
     return int(row) - 1, let_to_num[column]
-
 
 # Function that creates the Battleship randomly
 
