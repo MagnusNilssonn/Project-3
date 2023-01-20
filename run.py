@@ -22,7 +22,7 @@ def print_board(board):
 
 
 def get_ship_location():
-    row = input('Please enter a valid row 1-7 ').upper()
+    row = input('Please enter a valid row 1-7 ')
     while row not in '1234567':
         print("Please enter a valid row ")
         row = input('Please enter a valid row 1-7 ')
