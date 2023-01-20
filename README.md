@@ -1,31 +1,92 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Battleships
 
-Welcome MagnusNilssonn,
+The goal of this project was to test my knowledge and understanding of python coding, I decided quite early on to try a simpler game and the choice fell on battleships, a game that I always appreciated.
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
 
-## Reminders
+## Lucidchart 
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
+- I started to make a Lucidchart to map the workflow for the game.
 
-## Creating the Heroku app
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
 
-1. `heroku/python`
-2. `heroku/nodejs`
+![Mall Lucidchart](https://i.postimg.cc/6qnwmD4J/Battleships.jpg)
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+# Technologies Used:
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+## Programming Languages:
 
-Connect your GitHub repository and deploy as normal.
+- Python
 
-## Constraints
+## Gitpod
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+- I used gitpod to write the code
 
------
-Happy coding!
+## Github
+
+- GitHub is used to store the projects code after being pushed from Gitpod 
+
+<br><br>
+# The Game
+
+- When you start the game you will come to the game field and a welcome message, "You have 15 attempts to find the 2 ships".
+You start by choosing row 1-7.
+- If you do not select a valid value. It resets back to please enter a valid row
+
+<br><br>
+![Landing Page](https://i.postimg.cc/j5jGpCCr/landing.png)
+
+
+- If u miss a miss message will be printed and the turns countdown by 1.
+
+![Miss](https://i.postimg.cc/g27fRG0z/miss.png)
+
+- If u hit a hit message will be printed and the turns countdown by 1.
+
+![Hit](https://i.postimg.cc/YqvcS4pn/hit.png)
+
+- If u dont find the ships in 15 turns a game over message will be printed
+
+![Game over](https://i.postimg.cc/T38RMjrq/gameover.png)
+
+- If u manage to find both ships in 15 turns a congratulations message will apear
+
+![WellDone](https://i.postimg.cc/VkMXmF2Y/welldone.png)
+
+# Testing 
+
+- I've tested every possible error I can think of and also ran the code at https://pep8ci.herokuapp.com/ with no error reports
+
+
+# Things to implement in the future
+
+- The option for players to choose diffrent gridsize.
+- Multiplayer option if it´s 2 human players who wants to play.
+
+
+ # Deployment
+ ## Heroku
+ ### This application has been deployed from Github using Heroku. Here's how:
+
+1. Create an account at heroku.com 
+2. Create a new app, add app name and your region
+3. Click on create app
+4. Go to "Settings"
+5. Under Config Vars, add your sensitive data
+6. Go to "Deploy" and at "Deployment method", click on "Connect to Github"
+7. Enter your repository name and click on it when it shows below
+8. Choose the branch you want to buid your app from
+9. If desired, click on "Enable Automatic Deploys", which keeps the app up to date with your Github repository
+
+
+
+
+The live link can be found here - 
+
+
+# Credits 
+
+- Code Institute - For the course material and the support throughout.
+- Knowledge Mavens for some of the game code, functions and tips and tricks: https://www.youtube.com/@KnowledgeMavens
+- ArjanCodes for learn how to clean up the code: https://www.youtube.com/@ArjanCodes
+- Lucidchart: https://www.lucidchart.com/
+- The readme content "how to deploy to Heroku" was borrowed from https://github.com/johnvenkiah/CI_PP3_John_Venkiah#readme
