@@ -59,7 +59,7 @@ def count_hit_ships(board):
 create_ships(Hidden_Playfield)
 turns = 15
 while turns > 0:
-    print('Welcome to Battleship! You have 15 tries to find the two ships')
+    print('Welcome to Battleship! You have 15 attempts to find the 2 ships')
     print_board(Guess_Playfield)
     row, column = get_ship_location()
     if Guess_Playfield[row][column] == 'O':
