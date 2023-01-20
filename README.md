@@ -36,25 +36,25 @@ You start by choosing row 1-7.
 ![Landing Page](https://i.postimg.cc/j5jGpCCr/landing.png)
 
 
-- If u miss a miss message will be printed and the turns countdown by 1.
+- If u miss a "miss" message will be printed and the turns countdown by 1.
 
 ![Miss](https://i.postimg.cc/g27fRG0z/miss.png)
 
-- If u hit a hit message will be printed and the turns countdown by 1.
+- If u hit a "hit" message will be printed and the turns countdown by 1.
 
 ![Hit](https://i.postimg.cc/YqvcS4pn/hit.png)
 
-- If u dont find the ships in 15 turns a game over message will be printed
+- If u dont find the ships in 15 turns a "game over" message will be printed
 
 ![Game over](https://i.postimg.cc/T38RMjrq/gameover.png)
 
-- If u manage to find both ships in 15 turns a congratulations message will apear
+- If u manage to find both ships in 15 turns a "congratulations" message will apear
 
 ![WellDone](https://i.postimg.cc/VkMXmF2Y/welldone.png)
 
 # Testing 
 
-- I've tested every possible error I can think of and also ran the code at https://pep8ci.herokuapp.com/ with no error reports
+- I've tested every possible error I can think of and also ran the code at https://pep8ci.herokuapp.com/ with no error to report.
 
 
 # Things to implement in the future
