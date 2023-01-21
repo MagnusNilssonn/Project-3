@@ -30,7 +30,8 @@ The goal of this project was to test my knowledge and understanding of python co
 
 - When you start the game you will come to the game field and a welcome message, "You have 15 attempts to find the 2 ships".
 You start by choosing row 1-7.
-- If you do not select a valid value. It resets back to please enter a valid row
+- If you do not select a valid row. It prints :Row must be a number between 1 and 7.
+
 
 <br><br>
 ![Landing Page](https://i.postimg.cc/j5jGpCCr/landing.png)
@@ -54,6 +55,8 @@ You start by choosing row 1-7.
 
 # Testing 
 
+- When I started testing everything worked fine until I typed "Enter" instead of a number or letter which caused me to retype one of the functions. Now it works as I want.
+- I installed autopep8 and let it run alongside
 - I've tested every possible error I can think of and also ran the code at https://pep8ci.herokuapp.com/ with no error to report.
 
 
@@ -85,8 +88,9 @@ The live link can be found here - https://battleship--pp3.herokuapp.com/
 
 # Credits 
 
+- My mentor Naoise Gaffney for valuable tips and reflections, not least in the bug search
 - Code Institute - For the course material and the support throughout.
-- Knowledge Mavens for some of the game code, functions and tips and tricks: https://www.youtube.com/@KnowledgeMavens
-- ArjanCodes for learn how to clean up the code: https://www.youtube.com/@ArjanCodes
+- Knowledge Mavens for really good tips on the game code: https://www.youtube.com/@KnowledgeMavens
+- ArjanCodes for tips on how to clean up the code: https://www.youtube.com/@ArjanCodes
 - Lucidchart: https://www.lucidchart.com/
 - The readme content "how to deploy to Heroku" was borrowed from https://github.com/johnvenkiah/CI_PP3_John_Venkiah#readme
