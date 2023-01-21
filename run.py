@@ -22,21 +22,33 @@ def print_board(board):
 
 
 def get_ship_location():
-    row = input('Please enter a valid row 1-7 ')
-    while row not in '1234567':
-        print("Please enter a valid row ")
-        row = input('Please enter a valid row 1-7 ')
+    while True:
+        try:
+            row = abs(int(input("Please enter a valid row 1-7: ").strip()))
+        except ValueError:
+            print("Please enter a valid key.")
+        else:
+            if row in range(1, 8):
+                break
+            else:
+                print("Row must be a number between 1 and 7.")
 
 # Enter the column from A TO G
 
-    column = input('Please enter a valid column A-G ').upper()
-    while column not in 'ABCDEFG':
-        print("Please enter a valid column ")
-        column = input('Please enter a valid column A-G ').upper()
+    while True:
+        try:
+            column = input("Please enter a valid column A-G: ").strip().upper()
+            if len(column) == 1 and column in 'ABCDEFG':
+                break
+            else:
+                continue
+        except ValueError:
+            print("Please enter a valid key.")
+
     return int(row) - 1, let_to_num[column]
 
-# Function that creates the Battleship randomly
 
+# Function that creates the Battleship randomly
 
 def create_ships(board):
     for ship in range(2):
