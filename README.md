@@ -55,7 +55,7 @@ You start by choosing row 1-7.
 
 # Testing 
 
-- When I started testing everything worked fine until I typed "Enter" instead of a number or letter which caused me to retype one of the functions. Now it works as I want.
+- When I started testing everything worked fine until I typed "Enter" instead of a number or letter and the program crashed which caused me to retype one of the functions. Now it works as I want.
 - I installed autopep8 and let it run alongside
 - I've tested every possible error I can think of and also ran the code at https://pep8ci.herokuapp.com/ with no error to report.
 
